@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formation — El Mehdi FATAHLLAH</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar-custom">
+        <div class="container" style="max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 2rem;">
+            <a class="navbar-brand-custom" href="index.html">EMF<span style="opacity:0.5">.</span></a>
+            <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')" aria-label="Menu">
+                <i class="bi bi-list"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="propos.html">À Propos</a></li>
+                <li><a href="formation.html" class="active">Formation</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Formation -->
+    <main class="main-content">
+        <section class="formation-section">
+            <div class="section-header animate-in">
+                <span class="section-tag"><i class="bi bi-mortarboard-fill"></i> Parcours Académique</span>
+                <h1 class="section-title">Ma Formation</h1>
+                <p class="section-subtitle">Un parcours orienté vers le développement et l'intelligence artificielle</p>
+            </div>
+
+            <!-- Timeline -->
+            <div class="timeline">
+
+                <!-- Formation 3 : Master (current) -->
+                <div class="timeline-item animate-in delay-1">
+                    <div class="timeline-marker current">
+                        <div class="timeline-pulse"></div>
+                        <i class="bi bi-mortarboard-fill"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-card">
+                            <div class="timeline-badge-row">
+                                <span class="timeline-badge current-badge">
+                                    <i class="bi bi-clock-fill"></i> En cours
+                                </span>
+                                <span class="timeline-date">2025 — Présent</span>
+                            </div>
+                            <h2 class="timeline-title">Master 1 — Data & Intelligence Artificielle</h2>
+                            <p class="timeline-subtitle">
+                                <i class="bi bi-building"></i> INPT — Institut National des Postes et Télécommunications
+                            </p>
+                            <p class="timeline-location">
+                                <i class="bi bi-geo-alt-fill"></i> Rabat, Maroc
+                            </p>
+                            <div class="timeline-desc">
+                                <p>Master en alternance avec le <strong>Groupe Almada</strong>, axé sur la science des données et l'intelligence artificielle. Formation combinant théorie avancée à l'INPT et expérience professionnelle en entreprise chez Almada.</p>
+                            </div>
+                            <div class="alternance-info">
+                                <i class="bi bi-briefcase-fill"></i>
+                                <span>Alternance avec <strong>Groupe Almada</strong></span>
+                            </div>
+                            <div class="timeline-tags">
+                                <span class="tech-badge">Data Science</span>
+                                <span class="tech-badge">Machine Learning</span>
+                                <span class="tech-badge">Deep Learning</span>
+                                <span class="tech-badge">Big Data</span>
+                                <span class="tech-badge">AI Agentic</span>
+                                <span class="tech-badge">NLP</span>
+                                <span class="tech-badge">Alternance</span>
+                            </div>
+                            <div class="timeline-image">
+                                <div class="school-logo-card">
+                                    <img src="inpt.png" alt="INPT — Institut National des Postes et Télécommunications, Rabat" class="school-logo-img">
+                                </div>
+                                <div class="school-logo-card">
+                                    <img src="almada.png" alt="Groupe Almada — Entreprise d'alternance" class="school-logo-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formation 2 : Licence -->
+                <div class="timeline-item animate-in delay-2">
+                    <div class="timeline-marker completed">
+                        <i class="bi bi-check-lg"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-card">
+                            <div class="timeline-badge-row">
+                                <span class="timeline-badge completed-badge">
+                                    <i class="bi bi-check-circle-fill"></i> Diplôme obtenu
+                                </span>
+                                <span class="timeline-date">2024 — 2025</span>
+                            </div>
+                            <h2 class="timeline-title">Licence Professionnelle — Développement d'Applications & Intelligence Artificielle</h2>
+                            <p class="timeline-subtitle">
+                                <i class="bi bi-building"></i> EST — École Supérieure de Technologie
+                            </p>
+                            <p class="timeline-location">
+                                <i class="bi bi-geo-alt-fill"></i> Casablanca, Maroc
+                            </p>
+                            <div class="timeline-desc">
+                                <p>Formation spécialisée en développement d'applications modernes et intelligence artificielle, couvrant le développement web full-stack, le machine learning et le déploiement de modèles IA.</p>
+                            </div>
+                            <div class="timeline-tags">
+                                <span class="tech-badge">React</span>
+                                <span class="tech-badge">Django</span>
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">Machine Learning</span>
+                                <span class="tech-badge">Angular</span>
+                                <span class="tech-badge">Flutter</span>
+                                <span class="tech-badge">Docker</span>
+                            </div>
+                            <div class="timeline-image">
+                                <div class="school-logo-card">
+                                    <img src="estc.png" alt="EST — École Supérieure de Technologie, Casablanca" class="school-logo-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formation 1 : DUT -->
+                <div class="timeline-item animate-in delay-3">
+                    <div class="timeline-marker completed">
+                        <i class="bi bi-check-lg"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-card">
+                            <div class="timeline-badge-row">
+                                <span class="timeline-badge completed-badge">
+                                    <i class="bi bi-check-circle-fill"></i> Diplôme obtenu
+                                </span>
+                                <span class="timeline-date">2022 — 2024</span>
+                            </div>
+                            <h2 class="timeline-title">DUT — Génie Informatique</h2>
+                            <p class="timeline-subtitle">
+                                <i class="bi bi-building"></i> EST — École Supérieure de Technologie
+                            </p>
+                            <p class="timeline-location">
+                                <i class="bi bi-geo-alt-fill"></i> Casablanca, Maroc
+                            </p>
+                            <div class="timeline-desc">
+                                <p>Diplôme Universitaire de Technologie en Génie Informatique. Formation de base solide couvrant les fondamentaux de l'informatique, la programmation, les bases de données, les réseaux et les systèmes d'exploitation.</p>
+                            </div>
+                            <div class="timeline-tags">
+                                <span class="tech-badge">Java</span>
+                                <span class="tech-badge">C / C++</span>
+                                <span class="tech-badge">SQL</span>
+                                <span class="tech-badge">HTML / CSS</span>
+                                <span class="tech-badge">JavaScript</span>
+                                <span class="tech-badge">PHP</span>
+                                <span class="tech-badge">Réseaux</span>
+                                <span class="tech-badge">Linux</span>
+                            </div>
+                            <div class="timeline-image">
+                                <div class="school-logo-card">
+                                    <img src="estc.png" alt="EST — École Supérieure de Technologie, Casablanca" class="school-logo-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Summary Stats -->
+            <div class="formation-stats animate-in delay-4">
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="bi bi-calendar-check"></i></div>
+                    <div class="stat-number">4+</div>
+                    <div class="stat-label">Années d'études</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="bi bi-award"></i></div>
+                    <div class="stat-number">2</div>
+                    <div class="stat-label">Diplômes obtenus</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="bi bi-mortarboard"></i></div>
+                    <div class="stat-number">2</div>
+                    <div class="stat-label">Établissements</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="bi bi-briefcase"></i></div>
+                    <div class="stat-number">M1</div>
+                    <div class="stat-label">Niveau actuel</div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-custom">
+        <p>&copy; 2026 El Mehdi FATAHLLAH. Tous droits réservés.</p>
+    </footer>
+</body>
+
+</html>

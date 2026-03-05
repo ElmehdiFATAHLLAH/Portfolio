@@ -1,351 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
-    <title>El Mehdi FATAHLLAH</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Mehdi FATAHLLAH — Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link rel="icon" type="image/png" href="favicon.png">
-
-    <style>
-        .nav-link {
-            color: white;
-            transition: 0.7s;
-        }
-
-        .nav-link:hover {
-            color: rgb(14, 184, 251);
-            transition: color 0.7s linear;
-        }
-
-        .card {
-            box-shadow: 7px 5px 15px 2px rgb(14, 184, 251);
-            margin-top: 10%;
-        }
-
-        li {
-            margin-left: 20px;
-        }
-
-        #brand {
-            font-size: 25px;
-        }
-
-        body {
-            padding: 0 50px;
-        }
-
-        .social-icons a {
-            color: white;
-            transition: color 0.6s;
-        }
-
-        .social-icons a:hover {
-            color: rgb(14, 184, 251);
-            transition: color 0.6s;
-        }
-
-        .btn {
-            background-color: rgb(14, 184, 251);
-            color: black;
-            transition: 1s;
-        }
-
-        .btn:hover {
-            background-color: rgb(52, 58, 64);
-            box-shadow: 1px 1px 15px 2px rgb(14, 184, 251);
-            transition: 1s;
-        }
-
-        #brand {
-            opacity: 0;
-            animation: fadeIn 10s infinite ease-in-out;
-        }
-
-        @keyframes fadeIn {
-            0% {
-                opacity: 0.2;
-            }
-
-            20% {
-                opacity: 0.6;
-            }
-
-            40% {
-                opacity: 0.8;
-            }
-
-            60% {
-                opacity: 1;
-            }
-
-            80% {
-                opacity: 0.6;
-            }
-
-            100% {
-                opacity: 0.2;
-            }
-        }
-
-        @media (max-width : 1000px) {
-            .navbar-brand {
-                font-size: 50px !important;
-            }
-
-            .navbar-toggler {
-                font-size: 50px;
-            }
-
-            .offcanvas-body {
-                font-size: 30px;
-            }
-
-            .nav-item {
-                margin-top: 50px;
-            }
-
-            h2 {
-                font-size: 50px;
-            }
-
-            h4 {
-                font-size: 42px;
-            }
-
-            h6 {
-                font-size: 34px;
-            }
-
-            p {
-                font-size: 30px;
-            }
-
-            .social-icons {
-                font-size: 50px !important;
-            }
-
-            .social-icons a {
-                margin: 0 10px !important;
-            }
-
-            #proposMoi {
-                margin-bottom: 20px;
-                font-size: 30px;
-            }
-            .box{
-            margin-top: 20% !important;
-        }
-        }
-
-
-        .btn {
-            animation: bouton 5s infinite ease-in-out;
-        }
-
-        @keyframes bouton {
-            0% {
-                background-color: #0481f6;
-            }
-
-            20% {
-                background-color: #329bfe;
-            }
-
-            40% {
-                background-color: #82bef7;
-            }
-
-            60% {
-                background-color: #0385fe;
-            }
-
-            80% {
-                background-color: #9cccfa;
-            }
-
-            100% {
-                background-color: #0481f6;
-            }
-        }
-
-        h4 {
-            animation: anim1 1s;
-        }
-
-        @keyframes anim1 {
-            0% {
-                transform: translateX(-500px);
-            }
-
-            100% {
-                transform: translateX(0px);
-            }
-        }
-
-        h2 {
-            animation: anim2 1300ms;
-        }
-
-        @keyframes anim2 {
-            0% {
-                transform: translateX(-500px);
-            }
-
-            100% {
-                transform: translateX(0px);
-            }
-        }
-
-        h6 {
-            animation: anim3 1600ms;
-        }
-
-        @keyframes anim3 {
-            0% {
-                transform: translateX(-500px);
-            }
-
-            100% {
-                transform: translateX(0px);
-            }
-        }
-
-        .social-icons {
-            animation: animIcon 3s forwards;
-        }
-
-        @keyframes animIcon {
-            0% {
-                transform: translateX(-500px);
-            }
-
-            100% {
-                transform: translateX(0px);
-            }
-        }
-
-        .navBarElement {
-            position: fixed;
-            top: 0;
-            padding-right: 8%;
-            padding-top: 30px;
-            padding-bottom: 20px;
-            z-index: 10;
-        }
-
-        .box{
-            margin-top: 8% !important;
-        }
-        /*
-        .card{
-            animation: animCard 6s ease-out;
-        }
-        @keyframes animCard{
-            0% {
-            transform: translateY(-500px);
-            box-shadow: none;
-        }
-
-        60% {
-            transform: translateX(0px);
-            box-shadow: 1px 1px 15px 2px rgb(31, 187, 249);
-        }
-
-        100% {
-            transform: translateX(0px);
-            box-shadow: 1px 1px 15px 2px rgb(14, 184, 251);
-        }
-        } */
-
-
-        .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-        }
-
-        footer {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-dark text-white mb-5">
-    <nav class="navbar navbar-expand-lg bg-dark mt-3">
-        <div class="container-fluid navBarElement bg-dark">
-            <a class="navbar-brand fw-bold text-light" id="brand" href="#">El Mehdi FATAHLLAH</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar-custom">
+        <div class="container" style="max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 2rem;">
+            <a class="navbar-brand-custom" href="index.html">EMF<span style="opacity:0.5">.</span></a>
+            <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')" aria-label="Menu">
+                <i class="bi bi-list"></i>
             </button>
-            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
-                aria-labelledby="offcanvasDarkNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title fs-1" id="offcanvasDarkNavbarLabel">Portfolio.</h5>
-                    <button type="button" class="btn-close btn-close-white fs-1" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" style="color: rgb(14, 184, 251);" aria-current="page"
-                                href="#">Accueil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="propos.html">À Propos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="projets.html">Projets</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="propos.html">À Propos</a></li>
+                <li><a href="formation.html">Formation</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
+    <!-- Hero -->
+    <main class="main-content">
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-badge">Disponible pour des opportunités</div>
+                <p class="hero-greeting">Bonjour, c'est moi</p>
+                <h1 class="hero-name">
+                    El Mehdi<br>
+                    <span class="gradient-text">FATAHLLAH</span>
+                </h1>
+                <p class="hero-title">
+                    <span>Développeur Full-Stack</span> & <span>Intelligence Artificielle</span>
+                </p>
 
-    <div class="container-fluid mt-3 box">
-        <div class="row">
-            <div class="col-lg-6 m-auto">
-                <div class="card bg-dark text-white">
-                    <div class="card-body">
-                        <h4 class="card-title ">Bonjour c'est moi</h4>
-                        <h2 class="card-title">El Mehdi FATAHLLAH</h2>
-                        <h6 class="card-title">Et je suis un <span style="color: rgb(14, 184, 251);">Développeur Full-Stack et en Intelligence Artificielle</span></h6>
-                        <div class="social-icons fs-1">
-                            <a href="https://www.instagram.com/elmehdi__fatahllah" target="_blank" class="m-1"><i
-                                    id="insta" class="bi bi-instagram"></i></a>
-                            <a href="https://www.linkedin.com/in/el-mehdi-fatahllah-3b41842b9/" target="_blank"
-                                id="linkedin" class="m-1"><i class="bi bi-linkedin"></i></a>
-                            <a href="https://github.com/ElmehdiFATAHLLAH" target="_blank" id="git" class="m-1"><i
-                                    class="bi bi-github"></i></a>
-                            <a href="https://x.com/ElMehdiFTH" target="_blank" id="twitter" class="m-1"><i
-                                    class="bi bi-twitter"></i></a>
-                        </div>
-                        <div>
-                            <a class="btn mt-4" id="proposMoi" href="propos.html">À Propos de Moi</a>
-                        </div>
-                    </div>
+                <div class="hero-actions">
+                    <a class="btn-primary-custom" href="propos.html">
+                        <i class="bi bi-person"></i> À Propos de Moi
+                    </a>
+                    <a class="btn-outline-custom" href="projets.html">
+                        <i class="bi bi-code-slash"></i> Voir mes Projets
+                    </a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://www.instagram.com/elmehdi__fathallah" target="_blank" class="social-link" title="Instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/el-mehdi-fatahllah-3b41842b9/" target="_blank" class="social-link" title="LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/ElmehdiFATAHLLAH" target="_blank" class="social-link" title="GitHub">
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <a href="https://x.com/ElMehdiFTH" target="_blank" class="social-link" title="X (Twitter)">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
 
-    <footer class="">
-        <p class="text-center">&copy; 2025 El Mehdi FATAHLLAH. Tous droits réservés.</p>
+    <!-- Footer -->
+    <footer class="footer-custom">
+        <p>&copy; 2026 El Mehdi FATAHLLAH. Tous droits réservés.</p>
     </footer>
-
-    
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
